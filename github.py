@@ -9,9 +9,8 @@ oauth = OAuth(app)
 
 github = oauth.remote_app(
     'gitstars',
-    # 'gitstars',
-    consumer_key='147767bd0c8f1e35f2e6',
-    consumer_secret='81efb1a40376f9b941db28cc2ae1325499b1205c',
+    consumer_key='6ce4569a00ce43c79fb2',
+    consumer_secret='e073c7ddc205d5e6ea7ce36801bc5f2caa2a25c9',
     request_token_params={'scope': 'user:email'},
     base_url='https://api.github.com/',
     request_token_url=None,
@@ -59,4 +58,4 @@ def get_github_oauth_token():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=os.environ['PORT'])
+    app.run()
